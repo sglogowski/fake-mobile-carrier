@@ -1,0 +1,1 @@
+New-SelfSignedCertificate -Subject "CN=Fake Mobile Carrier - Always Data Encipherment" -CertStoreLocation Cert:CurrentUser -KeyExportPolicy Exportable -Type DocumentEncryptionCert -KeyUsage KeyEncipherment -KeySpec KeyExchange -KeyLength 2048 -NotAfter (Get-Date).AddMonths(6)
