@@ -17,6 +17,7 @@ namespace FakeMobileCarrier.DbUp
                 DeployChanges.To
                     .SqlDatabase(connectionString)
                     .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly())
+                    .WithTransactionPerScript()
                     .LogToConsole()
                     .Build();
 
