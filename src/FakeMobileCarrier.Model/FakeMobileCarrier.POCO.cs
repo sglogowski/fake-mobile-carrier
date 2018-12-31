@@ -7,7 +7,9 @@
 // Do not make changes directly to this file - edit the template instead.
 //
 // The following connection settings were used to generate this file:
-//     Connection String:      "Server=.; Database=FakeMobileCarrierDb; Integrated Security=True; Trusted_connection=true;Application Name=EntityFramework Reverse POCO Generator"
+//     Configuration file:     "src\FakeMobileCarrier.Model\App.config"
+//     Connection String Name: "FakeMobileCarrierDbContext"
+//     Connection String:      "Server=.; Database=FakeMobileCarrierDb; Integrated Security=True; Trusted_connection=true;Application Name=FakeMobileCarrier.Model"
 // ------------------------------------------------------------------------------------------------
 // Database Edition        : Developer Edition (64-bit)
 // Database Engine Edition : Enterprise
@@ -66,7 +68,7 @@ namespace FakeMobileCarrier.Model
         }
 
         public FakeMobileCarrierDbContext()
-            : base("Name=")
+            : base("Name=FakeMobileCarrierDbContext")
         {
         }
 

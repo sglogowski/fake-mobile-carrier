@@ -6,12 +6,12 @@
     // A course for this generator is available on Pluralsight at https://www.pluralsight.com/courses/code-first-entity-framework-legacy-databases
 
     // Main settings **********************************************************************************************************************
-    // Settings.ConnectionStringName = "MyDbContext";   // Searches for this connection string in config files listed below in the ConfigFilenameSearchOrder setting
+    Settings.ConnectionStringName = "FakeMobileCarrierDbContext";   // Searches for this connection string in config files listed below in the ConfigFilenameSearchOrder setting
     // ConnectionStringName is the only required setting.
     Settings.CommandTimeout = 600; // SQL Command timeout in seconds. 600 is 10 minutes, 0 will wait indefinately. Some databases can be slow retrieving schema information.
     // As an alternative to ConnectionStringName above, which must match your app/web.config connection string name, you can override them below
-    Settings.ConnectionString = "Server=.; Database=FakeMobileCarrierDb; Integrated Security=True; Trusted_connection=true;Application Name=EntityFramework Reverse POCO Generator";
-    Settings.ProviderName = "System.Data.SqlClient";
+    // Settings.ConnectionString = "Server=.; Database=FakeMobileCarrierDb; Integrated Security=True; Trusted_connection=true;Application Name=EntityFramework Reverse POCO Generator";
+    // Settings.ProviderName = "System.Data.SqlClient";
 
     Settings.Namespace = DefaultNamespace; // Override the default namespace here
     Settings.DbContextName = "FakeMobileCarrierDbContext"; // Note: If generating separate files, please give the db context a different name from this tt filename.

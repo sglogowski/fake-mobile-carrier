@@ -1,0 +1,7 @@
+﻿@model FakeMobileCarrier.CallCenter.WebApp.Models.Home.HomeModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ Html.RenderPartial("_HomeSearchUserView", Model.SearchUserModel); }
+@{ Html.RenderPartial("_HomeUserListView", Model.UserListModel); }

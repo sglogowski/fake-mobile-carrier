@@ -1,0 +1,17 @@
+﻿@model FakeMobileCarrier.CallCenter.WebApp.Models.Home._HomeUserListModel
+@if (Model != null)
+{
+<table>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.PESEL</td>
+            </tr>
+        }
+    </tbody>
+</table>
+}

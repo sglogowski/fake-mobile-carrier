@@ -49,17 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FakeMobileCarrierPOCO.cs">
+    <Compile Include="FakeMobileCarrier.POCO.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FakeMobileCarrierPOCO.tt</DependentUpon>
+      <DependentUpon>FakeMobileCarrier.POCO.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FakeMobileCarrierPOCO.tt">
+    <Content Include="FakeMobileCarrier.POCO.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FakeMobileCarrierPOCO.cs</LastGenOutput>
+      <LastGenOutput>FakeMobileCarrier.POCO.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
