@@ -1,4 +1,6 @@
-﻿@model System.Web.Mvc.HandleErrorInfo
+﻿@using FakeMobileCarrier.CallCenter.WebApp.Resources.Shared;
+
+@model System.Web.Mvc.HandleErrorInfo
 @{
     Layout = null;
 }
@@ -7,12 +9,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Error</title>
+    <title>@SharedResource.Error</title>
 </head>
 <body>
     <hgroup>
-        <h1 class="text-danger">Error.</h1>
-        <h2 class="text-danger">An error occurred while processing your request.</h2>
+        <h1 class="text-danger">@SharedResource.Error</h1>
+        <h2 class="text-danger">@SharedResource.ErrorText</h2>
     </hgroup>
 </body>
 </html>

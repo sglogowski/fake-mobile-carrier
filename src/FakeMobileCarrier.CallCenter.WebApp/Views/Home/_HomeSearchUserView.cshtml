@@ -1,20 +1,15 @@
-﻿@model FakeMobileCarrier.CallCenter.WebApp.Models.Home._HomeSearchUserModel
+﻿@using FakeMobileCarrier.CallCenter.WebApp.Models.Home;
 
+@model _HomeSearchUserModel
 @if (Model != null)
 {
-    using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
-        @Html.ValidationSummary(true)
-
-        @Html.LabelFor(model => model.FirstName)
-        @Html.TextBoxFor(model => model.FirstName)
-
-        @Html.LabelFor(model => model.LastName)
-        @Html.TextBoxFor(model => model.LastName)
-
-        @Html.LabelFor(model => model.PhoneNumber)
-        @Html.TextBoxFor(model => model.PhoneNumber)
-                
-        <input type="submit" value="Search" />
-    }
+    <tr>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <td>@Html.TextBoxFor(model => model.FirstName, new { @class = "w100p" })</td>
+            <td>@Html.TextBoxFor(model => model.LastName, new { @class = "w100p" })</td>
+            <td>@Html.TextBoxFor(model => model.PhoneNumber, new { @class = "w100p" })</td>
+            <td><input type="submit" class="w100p" value="Search" /></td>
+        }
+    </tr>
 }

@@ -112,7 +112,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Styles\Bootstrap\bootstrap.min.css" />
+    <Content Include="Styles\Home\homeStyle.css" />
+    <Content Include="Styles\main.css" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\HomeView.cshtml" />
   </ItemGroup>
@@ -129,6 +133,16 @@
     <Compile Include="Models\Home\_HomeUserListModel.cs" />
     <Compile Include="Models\Home\_HomeUserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Home\HomeResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Shared\SharedResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedResource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -152,6 +166,16 @@
       <Project>{1BD870FF-04C7-4E35-BD3E-8BA2849E112F}</Project>
       <Name>FakeMobileCarrier.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Home\HomeResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HomeResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Shared\SharedResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

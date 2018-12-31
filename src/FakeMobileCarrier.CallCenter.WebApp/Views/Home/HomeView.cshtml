@@ -1,7 +1,29 @@
-﻿@model FakeMobileCarrier.CallCenter.WebApp.Models.Home.HomeModel
+﻿@using FakeMobileCarrier.CallCenter.WebApp.Resources.Home;
+@using FakeMobileCarrier.CallCenter.WebApp.Models.Home;
+
+@model HomeModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@if (Model != null)
+{
+    <div id="home">
+        <link href="@Url.Content("~/Styles/Home/homeStyle.css")" rel="stylesheet" type="text/css" />
 
-@{ Html.RenderPartial("_HomeSearchUserView", Model.SearchUserModel); }
-@{ Html.RenderPartial("_HomeUserListView", Model.UserListModel); }
+        <h1 class="display-3">@HomeResource.SearchUserTitle</h1>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th class="w26p" scope="col">@HomeResource.FirstName</th>
+                    <th class="w26p" scope="col">@HomeResource.LastName</th>
+                    <th class="w26p" scope="col">@HomeResource.PhoneNumber</th>
+                    <th class="w22p" scope="col">@HomeResource.Pesel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ Html.RenderPartial("_HomeSearchUserView", Model.SearchUserModel); }
+                @{ Html.RenderPartial("_HomeUserListView", Model.UserListModel); }
+            </tbody>
+        </table>
+    </div>
+}
