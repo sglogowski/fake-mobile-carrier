@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{7498
 	ProjectSection(SolutionItems) = preProject
 		scripts\create-new-self-signed-certificate.ps1 = scripts\create-new-self-signed-certificate.ps1
 		scripts\encrypt-existing-dbo-users-phonenumber-column.ps1 = scripts\encrypt-existing-dbo-users-phonenumber-column.ps1
+		scripts\import-self-signed-certificate.ps1 = scripts\import-self-signed-certificate.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "certificates", "certificates", "{CCB7A42C-DC65-4ABB-8FA3-DDF0AC0EF3CF}"
+	ProjectSection(SolutionItems) = preProject
+		certificates\FCA2F7B54CC3A3A80C478A418C600205325C6757.pfx = certificates\FCA2F7B54CC3A3A80C478A418C600205325C6757.pfx
 	EndProjectSection
 EndProject
 Global
