@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "certificates", "certificate
 		certificates\FCA2F7B54CC3A3A80C478A418C600205325C6757.pfx = certificates\FCA2F7B54CC3A3A80C478A418C600205325C6757.pfx
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{282F6E9B-EDF0-40F8-9377-9AFFFA6A0447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerAlwaysEncrypted.CEKGenerator", "SQLServerAlwaysEncrypted.CEKGenerator\SQLServerAlwaysEncrypted.CEKGenerator.csproj", "{6F58205E-95E7-455B-B674-D9A30BDABBC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{EDE6D948-AC51-44D9-B48F-D05B07C55E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE6D948-AC51-44D9-B48F-D05B07C55E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE6D948-AC51-44D9-B48F-D05B07C55E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F58205E-95E7-455B-B674-D9A30BDABBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F58205E-95E7-455B-B674-D9A30BDABBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F58205E-95E7-455B-B674-D9A30BDABBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F58205E-95E7-455B-B674-D9A30BDABBC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,7 @@ Global
 		{4EE5354F-D1AA-4736-A915-6C883FD08F48} = {126A2F93-D6B2-4B37-886A-140F51843CFF}
 		{1BD870FF-04C7-4E35-BD3E-8BA2849E112F} = {126A2F93-D6B2-4B37-886A-140F51843CFF}
 		{EDE6D948-AC51-44D9-B48F-D05B07C55E25} = {126A2F93-D6B2-4B37-886A-140F51843CFF}
+		{6F58205E-95E7-455B-B674-D9A30BDABBC1} = {282F6E9B-EDF0-40F8-9377-9AFFFA6A0447}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1ED1F19B-F865-4B39-A28E-D077398BF314}
